@@ -1,0 +1,310 @@
+// Hompepage css embaixo
+.homepage {
+  width: 100%;
+
+  &_text {
+    margin-left: 6.5%;
+
+    &_intro {
+      font-size: 3.25rem;
+      color: #fa8080;
+      font-style: normal;
+      font-weight: 500;
+      font-family: "Oswald", sans-serif;
+    }
+
+    &_body {
+      font-family: "Roboto";
+      margin: -16px 0;
+      font-size: 1.5rem;
+      color: rgba(243, 243, 243, 1);
+      font-weight: 400;
+    }
+
+    &_lastline {
+      font-family: "Roboto";
+      margin-bottom: 5%;
+      font-size: 1.5rem;
+      color: rgba(243, 243, 243, 1);
+      font-weight: 400;
+    }
+  }
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    &_images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 36px;
+      margin-left: 6.5%;
+      margin-right: 6.5%;
+      object-fit: cover;
+      margin-top: 2%;
+      margin-bottom: 6%;
+    }
+  }
+}
+
+.conditionalbuttons {
+  display: none;
+}
+
+//Mobile
+
+@media screen and (max-width: 470px) {
+  .homepage {
+    &_text {
+      &_body {
+        font-size: 20px;
+        margin-top: -30px;
+        margin-bottom: -20.5px;
+      }
+      &_lastline {
+        font-size: 20px;
+      }
+    }
+
+    &_container {
+      &_images {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin: 50px 0;
+      }
+    }
+  }
+
+  .conditionalbuttons {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    gap: 25px;
+    margin-top: 20px;
+
+    & > a {
+      text-decoration: none;
+    }
+
+    & > a > button {
+      font-family: "Roboto";
+      font-size: 16px;
+      height: 43px;
+      border-radius: 8px;
+      background-color: #121212;
+      border: 1.5px solid #fa8080;
+      width: 100%;
+      cursor: pointer;
+      color: #f3f3f3;
+      text-decoration: none;
+    }
+
+    & > a:nth-child(2) > button {
+      border: 1.5px solid #fa8080;
+    }
+  }
+}
+
+//Mobile Landscape
+//TODO might have to see if this messes with IPAD
+@media screen and (min-width: 471px) and (max-width: 860px) {
+  .homepage {
+    &_text {
+      &_intro {
+      }
+      &_body {
+        font-size: 20px;
+        max-width: 50%;
+        margin-top: -30px;
+        margin-bottom: -20.5px;
+      }
+      &_lastline {
+        font-size: 20px;
+      }
+    }
+
+    &_container {
+      &_images {
+        flex-direction: row;
+        gap: 25px;
+        margin: 50px 6.5%;
+      }
+    }
+  }
+}
+
+//Ultra-wide
+
+@media screen and (min-width: 1880px) {
+  .homepage {
+    &_container {
+      &_images {
+        margin-left: 13%;
+      }
+    }
+    &_text {
+      &_intro {
+        font-size: 6.5rem;
+      }
+
+      &_body {
+        font-size: 3rem;
+      }
+
+      &_lastline {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+// Animation selectors
+
+.colorful {
+  color: #f79a3e;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  animation: fadeOut 2.5s;
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+
+    0% {
+      opacity: 0;
+    }
+  }
+}
+
+.friendly {
+  color: pink;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  animation: fadeIn 2.5s;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+
+    0% {
+      opacity: 0;
+    }
+  }
+}
+
+.engaging {
+  color: #30aabc;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  animation: fadeOut 2.5s;
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+    0% {
+      opacity: 0;
+    }
+  }
+}
+
+.useful {
+  color: #edc83d;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  animation: fadeIn 2.5s;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+
+    0% {
+      opacity: 0;
+    }
+  }
+}
+
+.helpful {
+  color: darkseagreen;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  animation: fadeOut 2.5s;
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+    0% {
+      opacity: 0;
+    }
+  }
+}
+
+.mindful {
+  color: rgb(240, 154, 220);
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  animation: fadeIn 2.5s;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+    0% {
+      opacity: 0;
+    }
+  }
+}
+
+//Mobile
+
+@media screen and (max-width: 470px) {
+  .colorful {
+    text-underline-offset: 4px;
+  }
+
+  .friendly {
+    text-underline-offset: 4px;
+  }
+
+  .engaging {
+    text-underline-offset: 4px;
+  }
+
+  .useful {
+    text-underline-offset: 4px;
+  }
+
+  .helpful {
+    text-underline-offset: 4px;
+  }
+
+  .mindful {
+    text-underline-offset: 4px;
+  }
+}
