@@ -2,7 +2,7 @@ import styles from "./Homepage.module.scss";
 import { useState, useEffect, useCallback } from "react";
 import dashWork from "img/dashWork.png";
 import cookingWork from "img/cookingWork.png";
-//import spotifyWork from "img/spotifyWork.png";
+import nutriumWork from "img/Nutrium.jpg";
 import floristWork from "img/floristWork.png";
 import animalWork from "img/animalWork.png";
 import ImagesComp from "@components/ImagesComp";
@@ -47,13 +47,15 @@ function Homepage() {
       <div className={styles.homepage_container}>
         <div className={styles.homepage_text}>
           <h1 className={styles.homepage_text_intro}>Hi, I'm Ana!</h1>
-          <p className={styles.homepage_text_body}>
-            UX designer passionate about creating&nbsp;
-            <span className={styles[word]}>{word}</span>
-          </p>
-          <p className={styles.homepage_text_lastline}>
-            experiences for social good.
-          </p>
+          <div className={styles.homepage_text_subTextAnim}>
+            <p className={styles.homepage_text_body}>
+              UX designer passionate about creating&nbsp;
+              <span className={styles[word]}>{word}</span>
+            </p>
+            <p className={styles.homepage_text_lastline}>
+              experiences for social good.
+            </p>
+          </div>
         </div>
         <div className={styles.conditionalbuttons}>
           <a href="https://drive.google.com/file/d/1xbP5CtNzTnW1DUUsmY8sYzmcPbWfRi98/view?usp=sharing">
@@ -69,47 +71,41 @@ function Homepage() {
         <article className={styles.homepage_container_images}>
           <ImagesComp
             img={dashWork}
-            alt={"Dash Work"}
+            alt={"Dash Freelance Work"}
             link={
               "https://drive.google.com/file/d/1uCNDqArpC-Z0MpcKXzwTCzPf83m9YLOD/view?usp=sharing"
             }
             text={
               <span>
-                <p style={{ whiteSpace: "nowrap" }}>Dedicated Mobile App</p>
-                <p style={{ textAlign: "center" }}>+</p>
-                <p style={{ textAlign: "center" }}>Responsive Website</p>
+                <p style={{ whiteSpace: "nowrap", textAlign: "center" }}>
+                  Freelance Work
+                </p>
               </span>
             }
+          />
+          <ImagesComp
+            img={nutriumWork}
+            alt={"Nutrium Design Challenge"}
+            link={
+              "https://drive.google.com/file/d/1n5DQRAfCxr_0gSwwVHwSvT25kdFQ1WHN/view"
+            }
+            text={<span>Design Challenge</span>}
           />
           <ImagesComp
             img={cookingWork}
-            alt={"Cooking Work"}
+            alt={"Cooking Case Study"}
             link={
               "https://drive.google.com/file/d/1mEinlmVDUEWWxl4N57sW7jFXO6GVCXQn/view"
             }
-            text={<span>Mobile App</span>}
-          />
-          <ImagesComp
-            img={floristWork}
-            alt={"Florist Work"}
-            link={
-              "https://drive.google.com/file/d/1vD9cSDTLgVDgf3seYxm5utGl-m6jDAMU/view"
-            }
-            text={<span>Mobile App</span>}
+            text={<span>Case Study</span>}
           />
           <ImagesComp
             img={animalWork}
-            alt={"anima Work"}
+            alt={"anima Case Study"}
             link={
               "https://drive.google.com/file/d/1iwBJ-jbDI6tnsb32qrD_dNR-liMCfqxe/view?usp=sharing"
             }
-            text={
-              <span>
-                <p style={{ whiteSpace: "nowrap" }}>Dedicated Mobile App</p>
-                <p style={{ textAlign: "center" }}>+</p>
-                <p style={{ textAlign: "center" }}>Responsive Website</p>
-              </span>
-            }
+            text={<span>Case Study</span>}
           />
         </article>
       </div>
