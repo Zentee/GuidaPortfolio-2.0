@@ -9,8 +9,11 @@
     height: 100%;
     align-items: center;
 
+    & > a {
+      margin-left: 6.5%;
+    }
+
     & > a > svg {
-      margin-left: 100px;
       margin-top: 10px;
     }
 
@@ -52,7 +55,6 @@
     &_navbar {
       & > a > svg {
         display: flex;
-        margin-left: 50%;
       }
 
       &_buttons {
@@ -69,7 +71,6 @@
     &_navbar {
       & > a > svg {
         display: flex;
-        margin-left: 100%;
       }
     }
   }
@@ -82,7 +83,6 @@
     &_navbar {
       & > a > svg {
         display: flex;
-        margin-left: 120%;
       }
     }
   }
@@ -95,7 +95,6 @@
     &_navbar {
       & > a > svg {
         display: flex;
-        margin-left: 150%;
       }
     }
   }
