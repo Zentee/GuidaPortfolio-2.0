@@ -1,0 +1,94 @@
+// Hompepage css embaixo
+
+.img {
+  position: relative;
+  overflow: hidden;
+
+  &_a {
+    opacity: 0%;
+  }
+
+  //Mouse Out
+  &_nothover {
+    position: relative;
+    overflow: hidden;
+  }
+  & > a > span > img {
+    // assim so presta atençao ao opacity.
+    transition: opacity 0.5s;
+  }
+
+  //Hover for the images
+  & > a > span > img:hover {
+    opacity: 0%;
+  }
+}
+
+.images {
+  &_hovertext {
+    // animation: slide-in 500ms;
+    // opacity: 75%;
+    transition: 0.5s;
+    color: white;
+    position: absolute;
+    font-size: 1.75rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    pointer-events: none;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+    border-radius: 5px;
+    opacity: 0%;
+  }
+
+  &_hoveranimation {
+    transform: translate(-50%, -50%);
+    opacity: 75%;
+  }
+
+  //For the third image hover text
+  & > span {
+    position: absolute;
+    font-size: 20px;
+    top: 87px;
+    left: 244px;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+    opacity: 75%;
+    border-radius: 5px;
+  }
+}
+
+//Mobile
+@media screen and (max-width: 470px) {
+  .img {
+    &_nothover {
+      animation: none;
+    }
+
+    & > a > span > img:hover {
+      animation: none;
+    }
+  }
+
+  .image {
+    &_hovertext {
+      animation: none;
+    }
+  }
+}
+
+//Ultra-wide
+@media screen and (min-width: 1880px) {
+  .images {
+    &_hovertext {
+      font-size: 30px;
+    }
+    & > span {
+      font-size: 30px;
+    }
+  }
+}

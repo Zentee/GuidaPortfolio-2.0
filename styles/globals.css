@@ -2,8 +2,12 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: rgba(18, 18, 18, 1);
+  /* Tive que adicionar isto para nao ter o zoom estranho  */
+  /* overflow-x: hidden; */
+  height: 100%;
 }
 
 * {
@@ -11,12 +15,16 @@ body {
 }
 
 main {
-  padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* height: 80vh; */
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
 }
 
 code {
@@ -26,10 +34,14 @@ code {
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
 }
 
-.container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@media screen and (max-width: 470px) {
+  main {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 471px) and (max-width: 1069px) {
+  main {
+    height: 100%;
+  }
 }
