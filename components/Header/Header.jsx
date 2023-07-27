@@ -23,11 +23,9 @@ function Header() {
           </svg>
         </a>
         <div className={styles.header_navbar_buttons}>
-          <a href="https://drive.google.com/file/d/1xbP5CtNzTnW1DUUsmY8sYzmcPbWfRi98/view?usp=sharing">
-            WORK
-          </a>
+          <a href="/">WORK</a>
           <a href="/about">ABOUT</a>
-          <a href="https://drive.google.com/file/d/1UIj22zVAVKKRb4Fmlv5wkdBy0HA7CHkw/view">
+          <a href="https://drive.google.com/file/d/1iH1SLrnpg_QSJ7u8p82aR4_2sqq03D70/view">
             RESUME
           </a>
         </div>

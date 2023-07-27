@@ -1,7 +1,7 @@
 import styles from "./About.module.scss";
 import { useState, useEffect, useCallback } from "react";
 import profilePicture from "img/profilePicture.jpg";
-import aboutImageMobile from "img/aboutImageMobile.jpg";
+import aboutImageMobile from "img/profilePicture.jpg";
 import Image from "next/image";
 
 function About() {
