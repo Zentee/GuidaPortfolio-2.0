@@ -3,8 +3,7 @@ import { useState, useEffect, useCallback } from "react";
 import dashWork from "img/dashWork.png";
 import cookingWork from "img/cookingWork.png";
 import nutriumWork from "img/Nutrium.jpg";
-import floristWork from "img/floristWork.png";
-import animalWork from "img/animalWork.png";
+import infraSpeak from "img/infraSpeak.jpg";
 import ImagesComp from "@components/ImagesComp";
 
 function Homepage() {
@@ -70,6 +69,14 @@ function Homepage() {
         </div>
         <article className={styles.homepage_container_images}>
           <ImagesComp
+            img={infraSpeak}
+            alt={"infraSpeak Case Study"}
+            link={
+              "https://drive.google.com/file/d/1Xm-RhYq_NQe5cali60zGm3b-0D8Ghc59/view"
+            }
+            text={<span>Design Challenge</span>}
+          />
+          <ImagesComp
             img={dashWork}
             alt={"Dash Freelance Work"}
             link={
@@ -96,14 +103,6 @@ function Homepage() {
             alt={"Cooking Case Study"}
             link={
               "https://drive.google.com/file/d/1mEinlmVDUEWWxl4N57sW7jFXO6GVCXQn/view"
-            }
-            text={<span>Case Study</span>}
-          />
-          <ImagesComp
-            img={animalWork}
-            alt={"anima Case Study"}
-            link={
-              "https://drive.google.com/file/d/1iwBJ-jbDI6tnsb32qrD_dNR-liMCfqxe/view?usp=sharing"
             }
             text={<span>Case Study</span>}
           />
