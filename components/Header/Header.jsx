@@ -25,7 +25,7 @@ function Header() {
         <div className={styles.header_navbar_buttons}>
           <a href="/">WORK</a>
           <a href="/about">ABOUT</a>
-          <a href="https://drive.google.com/file/d/1iH1SLrnpg_QSJ7u8p82aR4_2sqq03D70/view">
+          <a href="https://drive.google.com/file/d/1iH1SLrnpg_QSJ7u8p82aR4_2sqq03D70/view?ts=6592d26f">
             RESUME
           </a>
         </div>
