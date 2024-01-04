@@ -35,10 +35,10 @@ function Footer() {
           />
         </svg>
         <div className={styles.footer_container_buttons}>
-          <a href="https://dribbble.com/anamcunha">DRIBBLE</a>
-          <a href="mailto:anaguida30@hotmail.com">EMAIL</a>
+          <a href="https://dribbble.com/anamcunha">Dribble</a>
+          <a href="mailto:anaguida30@hotmail.com">Email</a>
           <a href="https://www.linkedin.com/in/ana-cunha-5a3893211/">
-            LINKEDIN
+            Linkedin
           </a>
           <a href="#start" className={styles.footer_scroll_up}>
             <svg
@@ -59,7 +59,7 @@ function Footer() {
           </a>
         </div>
         <p className={styles.footer_container_trademark}>
-          © 2022 All rights reseved to Ana Cunha
+          © 2024 All rights reseved to Ana Cunha
         </p>
       </nav>
     </footer>

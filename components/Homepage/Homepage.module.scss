@@ -10,7 +10,7 @@
       color: #fa8080;
       font-style: normal;
       font-weight: 500;
-      font-family: "Oswald", sans-serif;
+      font-family: "Montserrat", sans-serif;
       opacity: 0;
       animation: textAnim 1.5s forwards;
     }
@@ -34,7 +34,7 @@
     }
 
     &_body {
-      font-family: "Roboto";
+      font-family: "Lato";
       margin: -16px 0;
       font-size: 1.5rem;
       color: rgba(243, 243, 243, 1);
@@ -42,7 +42,7 @@
     }
 
     &_lastline {
-      font-family: "Roboto";
+      font-family: "Lato";
       margin-bottom: 5%;
       font-size: 1.5rem;
       color: rgba(243, 243, 243, 1);
@@ -111,7 +111,7 @@
     }
 
     & > a > button {
-      font-family: "Roboto";
+      font-family: "Lato";
       font-size: 16px;
       height: 43px;
       border-radius: 8px;

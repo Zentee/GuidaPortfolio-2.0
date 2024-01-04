@@ -23,10 +23,10 @@ function Header() {
           </svg>
         </a>
         <div className={styles.header_navbar_buttons}>
-          <a href="/">WORK</a>
-          <a href="/about">ABOUT</a>
+          <a href="/">Work</a>
+          <a href="/about">About</a>
           <a href="https://drive.google.com/file/d/13NUGGTOb5UB9UN40535hc3zK6TEyqHw5/view">
-            RESUME
+            Resume
           </a>
         </div>
       </nav>
