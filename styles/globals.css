@@ -7,7 +7,7 @@ body {
   background-color: rgba(18, 18, 18, 1);
   /* Tive que adicionar isto para nao ter o zoom estranho  */
   /* overflow-x: hidden; */
-  height: 100%;
+  min-height: 100%;
 }
 
 * {

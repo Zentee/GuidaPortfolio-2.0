@@ -4,18 +4,6 @@ import styles from "./Images.module.scss";
 
 function Images({ link, alt, img, text, ...props }) {
   const [isHover, setIsHover] = useState(false);
-  /*   const [animationStyle, setAnimationStyle] = useState(styles.images_hover);
-   */
-  // TODO - Estudar como foi feito com o useEffect
-  // - USAR UM USEMEMO PARA AS CLASSES DAS IMAGENS DINAMICAS.
-
-  /*   useEffect(() => {
-      setAnimationStyle(
-        isHover
-          ? `${styles.images_hover} ${styles.images_realhover}`
-          : styles.images_hover
-      );
-    }, [isHover]); */
 
   const handleMouseOver = () => {
     setIsHover(true);
