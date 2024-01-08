@@ -4,6 +4,7 @@ import dashWork from "img/dashWork.png";
 import cookingWork from "img/cookingWork.png";
 import nutriumWork from "img/Nutrium.jpg";
 import infraSpeak from "img/infraSpeak.jpg";
+import golem from "img/Golem.png";
 import ImagesComp from "@components/ImagesComp";
 
 function Homepage() {
@@ -68,19 +69,26 @@ function Homepage() {
           </a>
         </div>
         <article className={styles.homepage_container_images}>
+          <a href="/golem">
+            <ImagesComp
+              img={golem}
+              alt={"Client Work"}
+              text={<span>Client Work</span>}
+            />
+          </a>
           <ImagesComp
             img={infraSpeak}
             alt={"infraSpeak Case Study"}
+            text={<span>Design Challenge</span>}
             link={
               "https://drive.google.com/file/d/1Xm-RhYq_NQe5cali60zGm3b-0D8Ghc59/view"
             }
-            text={<span>Design Challenge</span>}
           />
           <ImagesComp
             img={dashWork}
             alt={"Dash Freelance Work"}
             link={
-              "https://drive.google.com/file/d/1uCNDqArpC-Z0MpcKXzwTCzPf83m9YLOD/view?usp=sharing"
+              "https://drive.google.com/file/d/14pTxTKO0e7HEwRkY4pwZnSh1dANimRaa/view"
             }
             text={
               <span>
@@ -91,20 +99,20 @@ function Homepage() {
             }
           />
           <ImagesComp
-            img={nutriumWork}
-            alt={"Nutrium Design Challenge"}
-            link={
-              "https://drive.google.com/file/d/1n5DQRAfCxr_0gSwwVHwSvT25kdFQ1WHN/view"
-            }
-            text={<span>Design Challenge</span>}
-          />
-          <ImagesComp
             img={cookingWork}
             alt={"Cooking Case Study"}
             link={
               "https://drive.google.com/file/d/1mEinlmVDUEWWxl4N57sW7jFXO6GVCXQn/view"
             }
             text={<span>Case Study</span>}
+          />
+          <ImagesComp
+            img={nutriumWork}
+            alt={"Nutrium Design Challenge"}
+            link={
+              "https://drive.google.com/file/d/1n5DQRAfCxr_0gSwwVHwSvT25kdFQ1WHN/view"
+            }
+            text={<span>Design Challenge</span>}
           />
         </article>
       </div>

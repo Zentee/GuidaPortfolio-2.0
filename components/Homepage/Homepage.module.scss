@@ -67,6 +67,10 @@
       margin-top: 2%;
       margin-bottom: 6%;
     }
+
+    &_images:nth-child(4) {
+      border: 2px solid red;
+    }
   }
 }
 
