@@ -81,7 +81,7 @@ function Homepage() {
             alt={"infraSpeak Case Study"}
             text={<span>Design Challenge</span>}
             link={
-              "https://drive.google.com/file/d/1Xm-RhYq_NQe5cali60zGm3b-0D8Ghc59/view"
+              "https://drive.google.com/file/d/1_O1yHUwjBvlOUj1jQospJD3VGbeXZHtV/view"
             }
           />
           <ImagesComp
