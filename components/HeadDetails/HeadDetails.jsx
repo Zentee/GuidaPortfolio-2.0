@@ -1,11 +1,11 @@
 import Head from "next/head";
-import favicon from "img/favicon.ico";
 
 function HeadDetails() {
   return (
     <Head>
       <title>Ana Cunha Portfolio</title>
-      <link rel="icon" href={favicon} />
+      <link rel="icon" href="/favicon.ico" />
+
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
