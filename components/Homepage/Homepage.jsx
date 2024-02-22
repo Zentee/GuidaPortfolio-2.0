@@ -5,6 +5,7 @@ import cookingWork from "img/cookingWork.png";
 import nutriumWork from "img/Nutrium.jpg";
 import infraSpeak from "img/infraSpeak.jpg";
 import golem from "img/Golem.png";
+import nano from "img/Nano.png";
 import ImagesComp from "@components/ImagesComp";
 
 function Homepage() {
@@ -61,12 +62,17 @@ function Homepage() {
         </div>
         <article className={styles.homepage_container_images}>
           <ImagesComp
+            img={nano}
+            alt={"Client Work"}
+            text={<span>Client Work</span>}
+            link={"/nano"}
+          />
+          <ImagesComp
             img={golem}
             alt={"Client Work"}
             text={<span>Client Work</span>}
             link={"/golem"}
           />
-
           <ImagesComp
             img={infraSpeak}
             alt={"infraSpeak Case Study"}
@@ -97,14 +103,14 @@ function Homepage() {
             }
             text={<span>Case Study</span>}
           />
-          <ImagesComp
+          {/*           <ImagesComp
             img={nutriumWork}
             alt={"Nutrium Design Challenge"}
             link={
               "https://drive.google.com/file/d/1n5DQRAfCxr_0gSwwVHwSvT25kdFQ1WHN/view"
             }
             text={<span>Design Challenge</span>}
-          />
+          /> */}
         </article>
       </div>
     </section>

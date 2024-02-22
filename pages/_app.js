@@ -13,7 +13,7 @@ function Application({ Component, pageProps }) {
     let backgroundColor = "rgba(18, 18, 18, 1)";
 
     // Change background color for specific routes
-    if (router.pathname === "/golem") {
+    if (router.pathname === "/golem" || router.pathname === "/nano") {
       backgroundColor = "#FFFFFF"; // set your desired color for /golem
     }
 

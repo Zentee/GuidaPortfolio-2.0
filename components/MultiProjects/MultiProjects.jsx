@@ -28,6 +28,11 @@ export default function MultiProjects({
       pdfUrl =
         "https://drive.google.com/file/d/1DSIvps4pnoi_Yse0KnuWbnx1GLaB6YT2/view?usp=sharing";
       break;
+
+    case "/nano":
+      pdfUrl =
+        "https://drive.google.com/file/d/1nnFUiuakZ4mu01l5IorO-0c1xV4yLyaG/view";
+      break;
   }
 
   const handleButtonClick = () => {
