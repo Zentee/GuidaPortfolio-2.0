@@ -33,15 +33,6 @@ function Homepage() {
     return () => clearInterval(timer);
   }, [count]);
 
-  //UseCallBack para Memoizar uma função recurrente para não estar a gastar muita memoria para algo que vai ser sempre o mesmo
-  // Usamos O UseCallBack para funções e o UseMemo para variaveis que guardamos o valor. Aqui o props.id como exemplo (e vou tirar o props id da homepage=
-
-  /*
-     const patrickIdTest = useCallback(() => {
-    console.log("Let's gooooooo");
-  }, [props.id]);
-  */
-
   return (
     <section className={styles.homepage}>
       <div className={styles.homepage_container}>
@@ -69,13 +60,13 @@ function Homepage() {
           </a>
         </div>
         <article className={styles.homepage_container_images}>
-          <a href="/golem">
-            <ImagesComp
-              img={golem}
-              alt={"Client Work"}
-              text={<span>Client Work</span>}
-            />
-          </a>
+          <ImagesComp
+            img={golem}
+            alt={"Client Work"}
+            text={<span>Client Work</span>}
+            link={"/golem"}
+          />
+
           <ImagesComp
             img={infraSpeak}
             alt={"infraSpeak Case Study"}

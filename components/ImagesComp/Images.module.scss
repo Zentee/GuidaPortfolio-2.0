@@ -1,94 +1,65 @@
-// Hompepage css embaixo
-
 .img {
   position: relative;
   overflow: hidden;
 
-  &_a {
-    opacity: 0%;
+  // Adjustments to simplify the hover effect logic
+  &:hover > a > span > img {
+    opacity: 0%; // Making the image transparent on hover
+    transition: opacity, 0.5s;
   }
 
-  //Mouse Out
-  &_nothover {
-    position: relative;
-    overflow: hidden;
-  }
-  & > a > span > img {
-    // assim so presta atençao ao opacity.
-    transition: opacity 0.5s;
-  }
-
-  //Hover for the images
-  & > a > span > img:hover {
-    opacity: 0%;
-  }
-}
-
-.images {
-  &_hovertext {
-    // animation: slide-in 500ms;
-    // opacity: 75%;
-    transition: 0.5s;
-    color: white;
-    position: absolute;
-    font-size: 1.75rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 100%);
-    pointer-events: none;
-    padding: 5px 7px;
-    border-radius: 2px;
-    font-weight: bold;
-    border-radius: 5px;
-    opacity: 0%;
-  }
-
-  &_hoveranimation {
+  // Ensuring the hover text style changes when the parent .img is hovered
+  &:hover .images_hovertext {
     transform: translate(-50%, -50%);
     opacity: 75%;
   }
 
-  //For the third image hover text
-  & > span {
-    position: absolute;
-    font-size: 20px;
-    top: 87px;
-    left: 244px;
-    padding: 5px 7px;
-    border-radius: 2px;
-    font-weight: bold;
-    opacity: 75%;
-    border-radius: 5px;
-  }
+  // No need for separate &_nothover class since all states can be managed with &:hover
 }
 
-//Mobile
+.images_hovertext {
+  transition: 0.5s;
+  color: white;
+  position: absolute;
+  font-size: 1.75rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  pointer-events: none;
+  padding: 5px 7px;
+  border-radius: 5px;
+  opacity: 0%; // Default state is invisible
+  font-weight: bold;
+}
+
+// This might be redundant or specific to a use case not fully explained
+.images > span {
+  position: absolute;
+  font-size: 20px;
+  top: 87px;
+  left: 244px;
+  padding: 5px 7px;
+  border-radius: 5px;
+  font-weight: bold;
+  opacity: 75%;
+}
+
+// Adjustments for mobile and ultra-wide screens remain largely unchanged
 @media screen and (max-width: 470px) {
   .img {
-    &_nothover {
-      animation: none;
-    }
-
-    & > a > span > img:hover {
+    &:hover > a > span > img {
       animation: none;
     }
   }
 
-  .image {
-    &_hovertext {
-      animation: none;
-    }
+  .images_hovertext {
+    animation: none;
   }
 }
 
-//Ultra-wide
 @media screen and (min-width: 1880px) {
-  .images {
-    &_hovertext {
-      font-size: 30px;
-    }
-    & > span {
-      font-size: 30px;
-    }
+  .images_hovertext,
+  .images > span {
+    font-size: 30px;
   }
 }
