@@ -3,11 +3,27 @@ import { useRouter } from "next/router";
 import React from "react";
 
 function Header() {
-  let location = useRouter();
   let color = "";
   let svgColor = "";
+  let path = useRouter().pathname;
+  let direction = "";
 
-  if (location.pathname === "/golem") {
+  switch (path) {
+    case "/golem":
+      direction = "/golem";
+      break;
+    case "/nano":
+      direction = "/nano";
+      break;
+    case "/dash":
+      direction = "/dash";
+      break;
+    case "/infraspeak":
+      direction = "/infraspeak";
+      break;
+  }
+
+  if (path === direction) {
     color = "#000000";
     svgColor = "#FA8080";
   } else {

@@ -5,6 +5,7 @@ import cookingWork from "img/cookingWork.png";
 import nutriumWork from "img/Nutrium.jpg";
 import infraSpeak from "img/infraSpeak.jpg";
 import golem from "img/Golem.png";
+import nano from "img/Nano.png";
 import ImagesComp from "@components/ImagesComp";
 
 function Homepage() {
@@ -33,15 +34,6 @@ function Homepage() {
     return () => clearInterval(timer);
   }, [count]);
 
-  //UseCallBack para Memoizar uma função recurrente para não estar a gastar muita memoria para algo que vai ser sempre o mesmo
-  // Usamos O UseCallBack para funções e o UseMemo para variaveis que guardamos o valor. Aqui o props.id como exemplo (e vou tirar o props id da homepage=
-
-  /*
-     const patrickIdTest = useCallback(() => {
-    console.log("Let's gooooooo");
-  }, [props.id]);
-  */
-
   return (
     <section className={styles.homepage}>
       <div className={styles.homepage_container}>
@@ -69,27 +61,28 @@ function Homepage() {
           </a>
         </div>
         <article className={styles.homepage_container_images}>
-          <a href="/golem">
-            <ImagesComp
-              img={golem}
-              alt={"Client Work"}
-              text={<span>Client Work</span>}
-            />
-          </a>
+          <ImagesComp
+            img={nano}
+            alt={"Client Work"}
+            text={<span>Client Work</span>}
+            link={"/nano"}
+          />
+          <ImagesComp
+            img={golem}
+            alt={"Client Work"}
+            text={<span>Client Work</span>}
+            link={"/golem"}
+          />
           <ImagesComp
             img={infraSpeak}
             alt={"infraSpeak Case Study"}
             text={<span>Design Challenge</span>}
-            link={
-              "https://drive.google.com/file/d/1_O1yHUwjBvlOUj1jQospJD3VGbeXZHtV/view"
-            }
+            link={"/infraspeak"}
           />
           <ImagesComp
             img={dashWork}
             alt={"Dash Freelance Work"}
-            link={
-              "https://drive.google.com/file/d/14pTxTKO0e7HEwRkY4pwZnSh1dANimRaa/view"
-            }
+            link={"/dash"}
             text={
               <span>
                 <p style={{ whiteSpace: "nowrap", textAlign: "center" }}>
@@ -106,14 +99,14 @@ function Homepage() {
             }
             text={<span>Case Study</span>}
           />
-          <ImagesComp
+          {/*           <ImagesComp
             img={nutriumWork}
             alt={"Nutrium Design Challenge"}
             link={
               "https://drive.google.com/file/d/1n5DQRAfCxr_0gSwwVHwSvT25kdFQ1WHN/view"
             }
             text={<span>Design Challenge</span>}
-          />
+          /> */}
         </article>
       </div>
     </section>

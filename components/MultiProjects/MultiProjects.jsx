@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./MultiProjects.module.scss";
 import { useRouter } from "next/router";
+import sha256 from "crypto-js/sha256";
 
 export default function MultiProjects({
   firstParagraph,
@@ -22,13 +23,35 @@ export default function MultiProjects({
   const roleArray = role.split(" ");
   let pdfUrl = "";
   let path = useRouter().pathname;
+  let passwordLess = undefined;
 
   switch (path) {
     case "/golem":
       pdfUrl =
         "https://drive.google.com/file/d/1DSIvps4pnoi_Yse0KnuWbnx1GLaB6YT2/view?usp=sharing";
       break;
+
+    case "/nano":
+      pdfUrl =
+        "https://drive.google.com/file/d/1nnFUiuakZ4mu01l5IorO-0c1xV4yLyaG/view";
+      break;
+
+    case "/dash":
+      pdfUrl =
+        "https://drive.google.com/file/d/14pTxTKO0e7HEwRkY4pwZnSh1dANimRaa/view";
+      passwordLess = "";
+      break;
+
+    case "/infraspeak":
+      pdfUrl =
+        "https://drive.google.com/file/d/1_O1yHUwjBvlOUj1jQospJD3VGbeXZHtV/view";
+      passwordLess = "";
+      break;
   }
+
+  const hashPassword = (password) => {
+    return sha256(password).toString();
+  };
 
   const handleButtonClick = () => {
     if (!isClient) {
@@ -36,13 +59,31 @@ export default function MultiProjects({
       return;
     }
 
-    const password = window.prompt(
+    if (passwordLess === "") {
+      window.open(pdfUrl, "_blank");
+      return;
+    }
+
+    let correctPassword = "";
+
+    switch (path) {
+      case "/golem":
+        correctPassword = hashPassword("GD30!").toString();
+
+        break;
+
+      case "/nano":
+        correctPassword = hashPassword("ND30!").toString();
+        break;
+    }
+
+    const inputPassword = window.prompt(
       "Please enter the password to access the PDF:"
     );
 
-    const correctPassword = "GD30!"; // Replace with your actual password
+    const inputPasswordHash = hashPassword(inputPassword).toString();
 
-    if (password === correctPassword) {
+    if (inputPasswordHash === correctPassword) {
       // Password is correct, grant access to the PDF
       window.open(pdfUrl, "_blank"); // Replace with the actual URL to your PDF
     } else {
@@ -50,6 +91,7 @@ export default function MultiProjects({
       alert("Incorrect password. Access denied.");
     }
   };
+
   return (
     <aside className={styles.projects}>
       <div className={styles.container}>
@@ -64,7 +106,7 @@ export default function MultiProjects({
               {roleArray.length > 1 ? "Roles: " : "Role: "} <span>{role}</span>
             </p>
             <button className={styles.button} onClick={handleButtonClick}>
-              Ask for Process
+              {passwordLess !== "" ? "Ask for Process" : "View Process"}
             </button>
           </div>
           <div className={styles.container_twoColumns_second}>

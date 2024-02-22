@@ -7,13 +7,30 @@ import HeadDetails from "@components/HeadDetails";
 
 function Application({ Component, pageProps }) {
   const router = useRouter();
+  let path = useRouter().pathname;
+  let direction = "";
 
   useEffect(() => {
     // Default background color
     let backgroundColor = "rgba(18, 18, 18, 1)";
 
+    switch (path) {
+      case "/golem":
+        direction = "/golem";
+        break;
+      case "/nano":
+        direction = "/nano";
+        break;
+      case "/dash":
+        direction = "/dash";
+        break;
+      case "/infraspeak":
+        direction = "/infraspeak";
+        break;
+    }
+
     // Change background color for specific routes
-    if (router.pathname === "/golem") {
+    if (path === direction) {
       backgroundColor = "#FFFFFF"; // set your desired color for /golem
     }
 
