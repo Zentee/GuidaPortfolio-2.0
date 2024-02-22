@@ -15,6 +15,12 @@ function Header() {
     case "/nano":
       direction = "/nano";
       break;
+    case "/dash":
+      direction = "/dash";
+      break;
+    case "/infraspeak":
+      direction = "/infraspeak";
+      break;
   }
 
   if (path === direction) {

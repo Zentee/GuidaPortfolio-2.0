@@ -77,16 +77,12 @@ function Homepage() {
             img={infraSpeak}
             alt={"infraSpeak Case Study"}
             text={<span>Design Challenge</span>}
-            link={
-              "https://drive.google.com/file/d/1_O1yHUwjBvlOUj1jQospJD3VGbeXZHtV/view"
-            }
+            link={"/infraspeak"}
           />
           <ImagesComp
             img={dashWork}
             alt={"Dash Freelance Work"}
-            link={
-              "https://drive.google.com/file/d/14pTxTKO0e7HEwRkY4pwZnSh1dANimRaa/view"
-            }
+            link={"/dash"}
             text={
               <span>
                 <p style={{ whiteSpace: "nowrap", textAlign: "center" }}>
