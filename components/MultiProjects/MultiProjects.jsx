@@ -68,7 +68,7 @@ export default function MultiProjects({
 
     switch (path) {
       case "/golem":
-        correctPassword = hashPassword(process.env.GOLEM_PASSWORD).toString();
+        correctPassword = hashPassword("GD30!").toString();
 
         break;
 
