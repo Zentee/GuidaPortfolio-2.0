@@ -1,3 +1,9 @@
+## The website
+https://anacunha.design/
+
+![image](https://github.com/Zentee/GuidaPortfolio-2.0/assets/85417874/8b763c9a-c613-4718-a8a3-dee274be424f)
+
+
 ## Getting Started
 
 First, run the development server:
