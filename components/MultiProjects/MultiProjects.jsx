@@ -24,7 +24,6 @@ export default function MultiProjects({
   let pdfUrl = "";
   let path = useRouter().pathname;
   let passwordLess = undefined;
-  console.log(process.env.NEXT_PUBLIC_GOLEM_API_KEY);
 
   switch (path) {
     case "/golem":
