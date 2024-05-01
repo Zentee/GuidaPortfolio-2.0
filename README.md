@@ -1,8 +1,8 @@
 ## The website
 https://anacunha.design/
 
-![](![image](https://github.com/Zentee/GuidaPortfolio-2.0/assets/85417874/08c79a6c-e7eb-472d-ae60-c6bda9870e11)
-)
+![image](https://github.com/Zentee/GuidaPortfolio-2.0/assets/85417874/08c79a6c-e7eb-472d-ae60-c6bda9870e11)
+
 
 
 ## Getting Started
