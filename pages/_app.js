@@ -9,6 +9,7 @@ function Application({ Component, pageProps }) {
   const router = useRouter();
   let path = useRouter().pathname;
   let direction = "";
+  const test = path === "/about";
 
   useEffect(() => {
     // Default background color
@@ -45,11 +46,11 @@ function Application({ Component, pageProps }) {
   return (
     <>
       <HeadDetails />
-      <Header />
+      {!test && <Header />}
       <main>
         <Component {...pageProps} />
       </main>
-      <Footer />
+      {!test && <Footer />}
     </>
   );
 }
