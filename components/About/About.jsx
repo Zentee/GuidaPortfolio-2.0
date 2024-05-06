@@ -47,6 +47,8 @@ function About() {
               src={aboutImageMobile}
               alt="Ana Profile Picture"
               layout="intrinsic"
+              loading="eager"
+              placeholder="blur"
             />
           </div>
           <p className={styles.homepage_text_about}>
@@ -65,6 +67,8 @@ function About() {
             src={profilePicture}
             alt="Ana Profile Picture"
             layout="intrinsic"
+            loading="eager"
+            placeholder="blur"
           />
         </div>
       </div>
