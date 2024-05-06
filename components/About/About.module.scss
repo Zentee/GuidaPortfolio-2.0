@@ -67,9 +67,13 @@
       display: flex;
       max-height: 100%;
       max-width: 20%;
-      margin-right: 5%;
+      margin-right: 6.5%;
       margin-left: 5%;
       align-self: center;
+
+      > span > img {
+        border-radius: 10%;
+      }
     }
   }
 }
@@ -133,8 +137,7 @@
       display: flex;
       flex-direction: column;
       margin-left: 6.5%;
-      &_intro {
-      }
+
       &_body {
         font-size: 20px;
         max-width: 90%;
@@ -193,7 +196,7 @@
 }
 
 //Ipad
-@media screen and (min-width: 860px) and (max-width: 1100px) {
+@media screen and (min-width: 800px) and (max-width: 1100px) {
   .homepage {
     &_text {
       display: flex;
@@ -238,7 +241,7 @@
       &_img {
         display: flex;
         max-height: 100%;
-        max-width: 30%;
+        max-width: 40%;
         margin-right: 5%;
         margin-left: 5%;
         align-self: center;
