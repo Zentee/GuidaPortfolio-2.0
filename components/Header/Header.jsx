@@ -8,6 +8,8 @@ function Header() {
   let path = useRouter().pathname;
   let direction = "";
 
+  const homePath = path === "/";
+
   switch (path) {
     case "/golem":
       direction = "/golem";
@@ -53,9 +55,11 @@ function Header() {
           </svg>
         </a>
         <div className={styles.header_navbar_buttons}>
-          <a style={{ color: color }} href="/">
-            Work
-          </a>
+          {!homePath && (
+            <a style={{ color: color }} href="/">
+              Work
+            </a>
+          )}
           <a style={{ color: color }} href="/about">
             About
           </a>
