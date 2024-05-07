@@ -68,16 +68,12 @@ export default function MultiProjects({
 
     switch (path) {
       case "/golem":
-        correctPassword = hashPassword(
-          process.env.NEXT_PUBLIC_GOLEM_API_KEY.toString()
-        );
+        correctPassword = hashPassword("GD30!");
 
         break;
 
       case "/nano":
-        correctPassword = hashPassword(
-          process.env.NEXT_PUBLIC_NANO_API_KEY
-        ).toString();
+        correctPassword = hashPassword("ND30!");
         break;
     }
 
