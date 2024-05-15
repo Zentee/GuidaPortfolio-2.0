@@ -50,10 +50,10 @@ function Homepage() {
           </div>
         </div>
         <div className={styles.conditionalbuttons}>
-          <a href="https://drive.google.com/file/d/1xbP5CtNzTnW1DUUsmY8sYzmcPbWfRi98/view?usp=sharing">
+          <a href="https://drive.google.com/file/d/1AbyYqklDs-Obx3TLHx-mnI656vQqYjr9/view?usp=sharing">
             <button>Work</button>
           </a>
-          <a href="https://drive.google.com/file/d/1UIj22zVAVKKRb4Fmlv5wkdBy0HA7CHkw/view">
+          <a href="https://drive.google.com/file/d/1AbyYqklDs-Obx3TLHx-mnI656vQqYjr9/view?usp=sharing">
             <button>Resume</button>
           </a>
           <a href="/about">
