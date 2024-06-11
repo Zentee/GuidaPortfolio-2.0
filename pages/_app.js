@@ -13,7 +13,7 @@ function Application({ Component, pageProps }) {
 
   useEffect(() => {
     // Default background color
-    let backgroundColor = "rgba(18, 18, 18, 1)";
+    let backgroundColor = "white";
 
     switch (path) {
       case "/golem":
@@ -39,7 +39,7 @@ function Application({ Component, pageProps }) {
 
     // Reset background color when the component unmounts or location changes
     return () => {
-      document.body.style.backgroundColor = "rgba(18, 18, 18, 1)"; // reset to default
+      document.body.style.backgroundColor = "white"; // reset to default
     };
   }, [router.pathname]); // This ensures the effect runs only when the path changes
 
