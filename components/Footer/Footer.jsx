@@ -32,7 +32,7 @@ function Footer() {
           </a>
         </div>
         <p className={styles.footer_container_trademark}>
-          © 2024 All rights reseved to Ana Cunha
+          © 2025 All rights reseved to Ana Cunha
         </p>
       </nav>
     </footer>

@@ -47,6 +47,21 @@ export default function MultiProjects({
         "https://drive.google.com/file/d/1_O1yHUwjBvlOUj1jQospJD3VGbeXZHtV/view";
       passwordLess = "";
       break;
+
+    case "/1global":
+      pdfUrl = "";
+      passwordLess = "";
+      break;
+
+    case "/invisible":
+      pdfUrl = "";
+      passwordLess = "";
+      break;
+
+    case "/betterroaming":
+      pdfUrl = "";
+      passwordLess = "";
+      break;
   }
 
   const hashPassword = (password) => {

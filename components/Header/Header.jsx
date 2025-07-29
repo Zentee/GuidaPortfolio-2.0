@@ -23,6 +23,15 @@ function Header() {
     case "/infraspeak":
       direction = "/infraspeak";
       break;
+    case "/1global":
+      direction = "/1global";
+      break;
+    case "/invisible":
+      direction = "/invisible";
+      break;
+    case "/betterroaming":
+      direction = "/betterroaming";
+      break;
   }
 
   if (path === direction) {

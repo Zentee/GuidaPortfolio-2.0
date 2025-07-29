@@ -6,6 +6,9 @@ import cookingWork from "img/cookingWork.png";
 import infraSpeak from "img/infraSpeak.jpg";
 import golem from "img/Golem.png";
 import nano from "img/Nano.png";
+import global from "img/global.jpg";
+import betterRoaming from "img/betterRoaming.jpg";
+import invisible from "img/invisible.jpg";
 import ImagesComp from "@components/ImagesComp";
 
 function Homepage() {
@@ -26,6 +29,7 @@ function Homepage() {
   const project3 = useId();
   const project4 = useId();
   const project5 = useId();
+  const project6 = useId();
 
   useEffect(() => {
     function loopingWords() {
@@ -70,31 +74,52 @@ function Homepage() {
         )}
         <article className={styles.homepage_container_images}>
           <ImagesComp
+            img={global}
+            alt={"Design Work"}
+            text={<span>Design Work</span>}
+            link={"/1global"}
+            id={project1}
+          />
+          <ImagesComp
+            img={invisible}
+            alt={"Freelance Work"}
+            text={<span>Freelance Work</span>}
+            link={"/invisible"}
+            id={project2}
+          />
+          <ImagesComp
+            img={betterRoaming}
+            alt={"Client Work"}
+            text={<span>Client Work</span>}
+            link={"/betterroaming"}
+            id={project3}
+          />
+          <ImagesComp
             img={nano}
             alt={"Client Work"}
             text={<span>Client Work</span>}
             link={"/nano"}
-            id={project1}
+            id={project4}
           />
           <ImagesComp
             img={golem}
             alt={"Client Work"}
             text={<span>Client Work</span>}
             link={"/golem"}
-            id={project2}
+            id={project5}
           />
-          <ImagesComp
+          {/*           <ImagesComp
             img={infraSpeak}
             alt={"infraSpeak Case Study"}
             text={<span>Design Challenge</span>}
             link={"/infraspeak"}
-            id={project3}
-          />
+            id={project4}
+          /> */}
           <ImagesComp
             img={dashWork}
             alt={"Dash Freelance Work"}
             link={"/dash"}
-            id={project4}
+            id={project6}
             text={
               <span>
                 <p style={{ whiteSpace: "nowrap", textAlign: "center" }}>
@@ -103,7 +128,7 @@ function Homepage() {
               </span>
             }
           />
-          <ImagesComp
+          {/*           <ImagesComp
             img={cookingWork}
             alt={"Cooking Case Study"}
             link={
@@ -111,7 +136,7 @@ function Homepage() {
             }
             text={<span>Case Study</span>}
             id={project5}
-          />
+          /> */}
         </article>
       </div>
     </section>
