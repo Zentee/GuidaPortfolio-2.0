@@ -5,19 +5,19 @@ export default function BetterRoaming() {
   return (
     <MultiProjects
       firstParagraph={
-        "Teaming up with a Lead Designer, we focused on the revamp of Nano Universe's website and mobile app, aiming to enhance user experience and streamline navigation."
+        "For this project our goal was to enable users to seamlessly add roaming plans to their existing voice subscriptions, enhancing connectivity for international travel while using BetterRoaming’s plans and a Google Watch device. This feature aimed to improve user satisfaction and drive additional revenue through tailored roaming options."
       }
       secondtParagraph={
-        "Our key focus was to unify the mobile app's look and feel with the website, ensuring consistent branding."
+        "The solution was based on scaling to accommodate additional roaming plans and an expanding user base, with flexibility for future product extensions."
       }
-      thirdParagraph={
-        "Our strategy revolved around user-centric design. My responsibilities included analyzing research insights, creating wireframes, refining the website interface for improved usability and coherence and creating prototypes to present to the client."
-      }
+      thirdParagraph={""}
+      team={"1 Product Manager  / 2 Designers / 1 Developer / 2 Stakeholders"}
       img={""}
-      timeline={"3 months"}
-      role={"Research, Wireframing, Visual, Prototyping"}
-      title={"Nano Universe"}
-      date={"2023"}
+      timeline={"2 months"}
+      role={"User Journey, Visual, Prototyping"}
+      title={"Better Roaming"}
+      subtitle={"(Google Watch)"}
+      date={"2025"}
     />
   );
 }

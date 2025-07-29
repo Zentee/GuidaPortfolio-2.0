@@ -5,19 +5,19 @@ export default function Global1() {
   return (
     <MultiProjects
       firstParagraph={
-        "Working on Dash marked my first experience working on an existing product and collaborating with clients. Alongside an experienced lead designer, we aimed to enhance the user experience of Dash—a comprehensive business management software."
+        "For this project our focus was on redesigning a key website page to make it more engaging and interactive, encouraging users to create their own custom plan with 1GLOBAL. The original layout lacked user engagement, so we introduced gamified elements and improved the flow to better capture and hold attention."
       }
       secondtParagraph={
-        "Our objectives were clear: improve the existing user experience across platforms and ensure accessibility for diverse user types. Collaborating closely with the lead designer, I contributed to the creation of user-friendly wireframes and UI elements through iterative prototyping."
+        "It was a rewarding challenge to transform a low-performing page into a more dynamic and effective experience. Collaborating closely with a cross-functional team made the process both efficient and impactful."
       }
-      thirdParagraph={
-        "This enhanced interface empowers users with an intuitive experience across platforms, enabling teams to effortlessly schedule tasks, input real-time data, and generate detailed reports. The collaborative journey not only improved Dash's usability but also laid the foundation for a more accessible and inclusive user experience."
+      team={
+        "1 Head of Design  / 1 UX/UI Designer / 1 Developer / 1 SEO Manager"
       }
       img={""}
       timeline={"1 Month"}
-      role={"Visual, Acessibility, Testing"}
-      title={"1 Global"}
-      date={"2024"}
+      role={"Visual, Prototyping, A/B Testing"}
+      title={"Enterprise (1GLOBAL)"}
+      date={"2025"}
     />
   );
 }

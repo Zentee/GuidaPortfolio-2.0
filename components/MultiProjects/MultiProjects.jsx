@@ -12,6 +12,8 @@ export default function MultiProjects({
   role,
   title,
   date,
+  subtitle,
+  team,
 }) {
   const [isClient, setIsClient] = useState(false);
 
@@ -111,14 +113,23 @@ export default function MultiProjects({
     <aside className={styles.projects}>
       <div className={styles.container}>
         <h1>{title}</h1>
+        {subtitle && <h2>{subtitle}</h2>}
         <p>{date}</p>
         <div className={styles.container_twoColumns}>
           <div className={styles.container_twoColumns_first}>
             <p>
-              Timeline: <span>{timeline}</span>
+              Timeline:
+              <br />
+              <span style={{ display: "inline-block", marginTop: "5px" }}>
+                {timeline}
+              </span>
             </p>
             <p>
-              {roleArray.length > 1 ? "Roles: " : "Role: "} <span>{role}</span>
+              {roleArray.length > 1 ? "Roles: " : "Role: "}
+              <br />
+              <span style={{ display: "inline-block", margintop: "5px" }}>
+                {role}
+              </span>
             </p>
             <button className={styles.button} onClick={handleButtonClick}>
               {passwordLess !== "" ? "Ask for Process" : "View Process"}
@@ -128,6 +139,11 @@ export default function MultiProjects({
             <p>{firstParagraph}</p>
             {secondtParagraph && <p>{secondtParagraph}</p>}
             {thirdParagraph && <p>{thirdParagraph}</p>}
+            {team && (
+              <p className={styles.container_twoColumns_second_team}>
+                <b>Team:</b> {team}
+              </p>
+            )}
           </div>
         </div>
       </div>

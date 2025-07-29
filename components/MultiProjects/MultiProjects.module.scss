@@ -28,6 +28,20 @@
     }
   }
 
+  > h2 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+
+    @media screen and (max-width: 470px) {
+      font-size: 20px;
+    }
+  }
+
   > p {
     color: #000;
     font-family: Montserrat;
@@ -117,6 +131,18 @@
         font-weight: 400;
         line-height: 118.75%; /* 19px */
         letter-spacing: 0.64px;
+      }
+
+      &_team {
+        > b {
+          color: #000;
+          font-family: Lato;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          letter-spacing: 1.92px;
+        }
       }
 
       @media screen and (max-width: 470px) {
