@@ -1,6 +1,6 @@
 import React from "react";
 import MultiProjects from "@components/MultiProjects";
-import infraSpeak from "img/infraspeakPage.png";
+import infraSpeak from "img/infrapseakPage.png";
 
 export default function Infraspeak() {
   return (
