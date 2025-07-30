@@ -47,11 +47,11 @@ export default function MultiProjects({
       passwordLess = "";
       break;
 
-    case "/infraspeak":
+    /*     case "/infraspeak":
       pdfUrl =
         "https://drive.google.com/file/d/1_O1yHUwjBvlOUj1jQospJD3VGbeXZHtV/view";
       passwordLess = "";
-      break;
+      break; */
 
     case "/1global":
       pdfUrl =
