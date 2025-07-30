@@ -167,16 +167,18 @@ export default function MultiProjects({
             )}
           </div>
         </div>
-        <div className={styles.visualContainer}>
-          <Image
-            src={img}
-            alt={imgAlt}
-            className={styles.teamVisual}
-            layout="intrinsic"
-            loading="eager"
-            placeholder="blur"
-          />
-        </div>
+        {img && (
+          <div className={styles.visualContainer}>
+            <Image
+              src={img}
+              alt={imgAlt}
+              className={styles.teamVisual}
+              layout="intrinsic"
+              loading="eager"
+              placeholder="blur"
+            />
+          </div>
+        )}
       </div>
     </aside>
   );
