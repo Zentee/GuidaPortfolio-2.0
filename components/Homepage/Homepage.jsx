@@ -8,7 +8,7 @@ import golem from "img/Golem.png";
 import nano from "img/Nano.png";
 import global from "img/global.jpg";
 import betterRoaming from "img/betterRoaming.jpg";
-import invisible from "img/invisible.jpg";
+import invisible from "img/invisible.png";
 import ImagesComp from "@components/ImagesComp";
 
 function Homepage() {
