@@ -1,5 +1,6 @@
 import React from "react";
 import MultiProjects from "@components/MultiProjects";
+import nano from "img/nanoPage.png";
 
 export default function Nano() {
   return (
@@ -13,7 +14,8 @@ export default function Nano() {
       thirdParagraph={
         "Our strategy revolved around user-centric design. My responsibilities included analyzing research insights, creating wireframes, refining the website interface for improved usability and coherence and creating prototypes to present to the client."
       }
-      img={""}
+      img={nano}
+      imgAlt={"Nano Universe"}
       timeline={"3 months"}
       role={"Research"}
       role2={"Wireframing"}

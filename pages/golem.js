@@ -1,5 +1,6 @@
 import React from "react";
 import MultiProjects from "@components/MultiProjects";
+import golem from "img/golemPage.png";
 
 export default function Golem() {
   return (
@@ -13,7 +14,8 @@ export default function Golem() {
       thirdParagraph={
         "Our refined subscription interface now empowers users with effortless transitions between bi-weekly and monthly cycles, significantly elevating Golem's customer experience."
       }
-      img={""}
+      img={golem}
+      imgAlt={"Golem"}
       timeline={"2 weeks"}
       role={"Visual"}
       role2={"Prototyping"}

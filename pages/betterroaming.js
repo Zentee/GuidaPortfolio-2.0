@@ -1,5 +1,6 @@
 import React from "react";
 import MultiProjects from "@components/MultiProjects";
+import bettterRoaming from "img/betterRoamingPage.png";
 
 export default function BetterRoaming() {
   return (
@@ -12,7 +13,8 @@ export default function BetterRoaming() {
       }
       thirdParagraph={""}
       team={"1 Product Manager  / 2 Designers / 1 Developer / 2 Stakeholders"}
-      img={""}
+      img={bettterRoaming}
+      imgAlt="BetterRoaming"
       timeline={"2 months"}
       role={"User Journey"}
       role2={"Visual"}

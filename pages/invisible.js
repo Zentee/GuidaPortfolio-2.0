@@ -16,7 +16,7 @@ export default function Invisible() {
         "1 Team Lead  / 1 Designer / 1 Developer / 1 Quality Analyst / 5 Agents"
       }
       img={invisible}
-      imgAlt="Invisible Technologies"
+      imgAlt={"Invisible Technologies"}
       timeline={"1 week"}
       role={"User Research"}
       role2={"UX/UI Design"}

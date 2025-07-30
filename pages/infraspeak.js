@@ -1,5 +1,6 @@
 import React from "react";
 import MultiProjects from "@components/MultiProjects";
+import infraSpeak from "img/infraspeakPage.png";
 
 export default function Infraspeak() {
   return (
@@ -13,7 +14,8 @@ export default function Infraspeak() {
       thirdParagraph={
         "Crafting Infraspeak's hotel equipment app proved enlightening as it required understanding the cleaning crew's needs and simplifying the design for seamless navigation across diverse tech backgrounds. The iterative process, from strategic button placement to addressing challenges like duplicate reports, reinforced the app's efficiency and resilience for real-world use."
       }
-      img={""}
+      img={infraSpeak}
+      imgAlt={"Infraspeak"}
       timeline={"1 week"}
       role={"User Journey"}
       role2={"Visual"}
