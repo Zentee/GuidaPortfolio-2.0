@@ -1,5 +1,6 @@
 import React from "react";
 import MultiProjects from "@components/MultiProjects";
+import invisible from "img/invisiblePage.png";
 
 export default function Invisible() {
   return (
@@ -14,7 +15,8 @@ export default function Invisible() {
       team={
         "1 Team Lead  / 1 Designer / 1 Developer / 1 Quality Analyst / 5 Agents"
       }
-      img={""}
+      img={invisible}
+      imgAlt="Invisible Technologies"
       timeline={"1 week"}
       role={"User Research"}
       role2={"UX/UI Design"}

@@ -151,3 +151,23 @@
     }
   }
 }
+
+.visualContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+  padding: 0 clamp(16px, 5vw, 80px); // Responsive horizontal padding
+  max-width: 1200px;
+
+  @media screen and (max-width: 470px) {
+    display: none;
+  }
+}
+
+.teamVisual {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}

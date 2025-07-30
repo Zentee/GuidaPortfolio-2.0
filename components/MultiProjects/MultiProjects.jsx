@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./MultiProjects.module.scss";
 import { useRouter } from "next/router";
 import sha256 from "crypto-js/sha256";
+import Image from "next/image";
 
 export default function MultiProjects({
   firstParagraph,
@@ -17,6 +18,7 @@ export default function MultiProjects({
   date,
   subtitle,
   team,
+  imgAlt = "",
 }) {
   const [isClient, setIsClient] = useState(false);
 
@@ -157,14 +159,25 @@ export default function MultiProjects({
             {secondtParagraph && <p>{secondtParagraph}</p>}
             {thirdParagraph && <p>{thirdParagraph}</p>}
             {team && (
-              <p className={styles.container_twoColumns_second_team}>
-                <b>Team:</b> {team}
-              </p>
+              <>
+                <p className={styles.container_twoColumns_second_team}>
+                  <b>Team:</b> {team}
+                </p>
+              </>
             )}
           </div>
         </div>
+        <div className={styles.visualContainer}>
+          <Image
+            src={img}
+            alt={imgAlt}
+            className={styles.teamVisual}
+            layout="intrinsic"
+            loading="eager"
+            placeholder="blur"
+          />
+        </div>
       </div>
-      {/* <div style={{ backgroundColor: "yellow", height: "50px" }}></div> */}
     </aside>
   );
 }
