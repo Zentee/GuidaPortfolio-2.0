@@ -10,6 +10,9 @@ export default function MultiProjects({
   img,
   timeline,
   role,
+  role2,
+  role3,
+  role4,
   title,
   date,
   subtitle,
@@ -51,18 +54,21 @@ export default function MultiProjects({
       break;
 
     case "/1global":
-      pdfUrl = "";
-      passwordLess = "";
+      pdfUrl =
+        "https://drive.google.com/file/d/1GExB16OfcQ-sd45bdoQLSmM0Pz3k-ggk/view?usp=sharing";
+
       break;
 
     case "/invisible":
-      pdfUrl = "";
+      pdfUrl =
+        "https://drive.google.com/file/d/12UK0IV_q3Kd0of6DloX_LD8mG9KyqwIC/view?usp=sharing";
       passwordLess = "";
       break;
 
     case "/betterroaming":
-      pdfUrl = "";
-      passwordLess = "";
+      pdfUrl =
+        "https://drive.google.com/file/d/1OafIWJoFADy5-4X9fkrQK8IpOP_IT--I/view?usp=sharing";
+
       break;
   }
 
@@ -70,42 +76,36 @@ export default function MultiProjects({
     return sha256(password).toString();
   };
 
-  const handleButtonClick = () => {
-    if (!isClient) {
-      // If not client-side, do not proceed
-      return;
-    }
+  const handleButtonClick = async () => {
+    if (!isClient) return;
 
     if (passwordLess === "") {
       window.open(pdfUrl, "_blank");
       return;
     }
 
-    let correctPassword = "";
-
-    switch (path) {
-      case "/golem":
-        correctPassword = hashPassword("GD30!");
-
-        break;
-
-      case "/nano":
-        correctPassword = hashPassword("ND30!");
-        break;
-    }
-
     const inputPassword = window.prompt(
       "Please enter the password to access the PDF:"
     );
+    if (!inputPassword) return;
 
-    const inputPasswordHash = hashPassword(inputPassword).toString();
+    try {
+      const res = await fetch("/api/pdf-access", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ path, password: inputPassword }),
+      });
 
-    if (inputPasswordHash === correctPassword) {
-      // Password is correct, grant access to the PDF
-      window.open(pdfUrl, "_blank"); // Replace with the actual URL to your PDF
-    } else {
-      // Password is incorrect, show an alert or handle as needed
-      alert("Incorrect password. Access denied.");
+      const data = await res.json();
+
+      if (res.ok) {
+        window.open(data.url, "_blank");
+      } else {
+        alert("Incorrect password. Access denied.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong.");
     }
   };
 
@@ -127,9 +127,26 @@ export default function MultiProjects({
             <p>
               {roleArray.length > 1 ? "Roles: " : "Role: "}
               <br />
-              <span style={{ display: "inline-block", margintop: "5px" }}>
+              <span
+                style={{
+                  display: "inline-block",
+                  marginTop: "5px",
+                }}
+              >
                 {role}
               </span>
+              {role2 && <br />}
+              {role2 && (
+                <span style={{ display: "inline-block" }}>{role2}</span>
+              )}
+              {role3 && <br />}
+              {role3 && (
+                <span style={{ display: "inline-block" }}>{role3}</span>
+              )}
+              {role4 && <br />}
+              {role4 && (
+                <span style={{ display: "inline-block" }}>{role4}</span>
+              )}
             </p>
             <button className={styles.button} onClick={handleButtonClick}>
               {passwordLess !== "" ? "Ask for Process" : "View Process"}

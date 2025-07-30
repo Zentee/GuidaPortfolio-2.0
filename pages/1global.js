@@ -15,7 +15,9 @@ export default function Global1() {
       }
       img={""}
       timeline={"1 Month"}
-      role={"Visual, Prototyping, A/B Testing"}
+      role={"Visual"}
+      role2={"Prototyping"}
+      role3={"A/B Testing"}
       title={"Enterprise (1GLOBAL)"}
       date={"2025"}
     />

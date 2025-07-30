@@ -15,7 +15,9 @@ export default function Dash() {
       }
       img={""}
       timeline={"1 Month"}
-      role={"Visual, Acessibility, Testing"}
+      role={"Visual"}
+      role2={"Testing"}
+      role3={"Acessibility"}
       title={"Dash"}
       date={"2022"}
     />

@@ -14,8 +14,11 @@ export default function BetterRoaming() {
       team={"1 Product Manager  / 2 Designers / 1 Developer / 2 Stakeholders"}
       img={""}
       timeline={"2 months"}
-      role={"User Journey, Visual, Prototyping"}
-      title={"Better Roaming"}
+      role={"User Journey"}
+      role2={"Visual"}
+      role3={"Prototyping"}
+      //role4={}
+      title={"BetterRoaming"}
       subtitle={"(Google Watch)"}
       date={"2025"}
     />

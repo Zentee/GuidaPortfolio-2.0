@@ -64,7 +64,7 @@ function Homepage() {
             <a href="https://drive.google.com/file/d/1AbyYqklDs-Obx3TLHx-mnI656vQqYjr9/view?usp=sharing">
               <button>Work</button>
             </a>
-            <a href="https://drive.google.com/file/d/1AbyYqklDs-Obx3TLHx-mnI656vQqYjr9/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/1606kdHpqm94AR61jyZUCHumyUmg-mXqJ/view?usp=sharing">
               <button>Resume</button>
             </a>
             <a href="/about">

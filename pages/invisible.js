@@ -16,7 +16,8 @@ export default function Invisible() {
       }
       img={""}
       timeline={"1 week"}
-      role={"User Research, UX/UI Design"}
+      role={"User Research"}
+      role2={"UX/UI Design"}
       title={"Invisible Technologies"}
       date={"2025"}
     />

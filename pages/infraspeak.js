@@ -15,7 +15,9 @@ export default function Infraspeak() {
       }
       img={""}
       timeline={"1 week"}
-      role={"User Journey, Visual, Prototyping"}
+      role={"User Journey"}
+      role2={"Visual"}
+      role3={"Prototyping"}
       title={"Infraspeak"}
       date={"2023"}
     />
