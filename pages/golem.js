@@ -15,7 +15,8 @@ export default function Golem() {
       }
       img={""}
       timeline={"2 weeks"}
-      role={"Visual, Prototyping"}
+      role={"Visual"}
+      role2={"Prototyping"}
       title={"Golem"}
       date={"2023"}
     />

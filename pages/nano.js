@@ -15,7 +15,10 @@ export default function Nano() {
       }
       img={""}
       timeline={"3 months"}
-      role={"Research, Wireframing, Visual, Prototyping"}
+      role={"Research"}
+      role2={"Wireframing"}
+      role3={"Visual"}
+      role4={"Prototyping"}
       title={"Nano Universe"}
       date={"2023"}
     />

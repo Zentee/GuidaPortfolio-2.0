@@ -27,6 +27,15 @@ function Application({ Component, pageProps }) {
       case "/infraspeak":
         direction = "/infraspeak";
         break;
+      case "/1global":
+        direction = "/1global";
+        break;
+      case "/invisible":
+        direction = "/invisible";
+        break;
+      case "/betterroaming":
+        direction = "/betterroaming";
+        break;
     }
 
     // Change background color for specific routes
