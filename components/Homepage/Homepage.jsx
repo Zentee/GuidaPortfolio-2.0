@@ -7,8 +7,8 @@ import infraSpeak from "img/infraSpeak.jpg";
 import golem from "img/Golem.png";
 import nano from "img/Nano.png";
 import global from "img/global.jpg";
-import betterRoaming from "img/betterRoaming.jpg";
-import invisible from "img/invisible.jpg";
+//import betterRoaming from "img/betterRoaming.jpg";
+//import invisible from "img/invisible.jpg";
 import ImagesComp from "@components/ImagesComp";
 
 function Homepage() {
@@ -81,14 +81,14 @@ function Homepage() {
             id={project1}
           />
           <ImagesComp
-            img={invisible}
+            img={nano}
             alt={"Freelance Work"}
             text={<span>Freelance Work</span>}
             link={"/invisible"}
             id={project2}
           />
           <ImagesComp
-            img={betterRoaming}
+            img={nano}
             alt={"Client Work"}
             text={<span>Client Work</span>}
             link={"/betterroaming"}
