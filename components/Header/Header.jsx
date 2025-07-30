@@ -74,7 +74,7 @@ function Header() {
           </a>
           <a
             style={{ color: color }}
-            href="https://drive.google.com/file/d/13NUGGTOb5UB9UN40535hc3zK6TEyqHw5/view"
+            href="https://drive.google.com/file/d/1606kdHpqm94AR61jyZUCHumyUmg-mXqJ/view?usp=sharing"
           >
             Resume
           </a>
