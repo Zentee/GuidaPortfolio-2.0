@@ -1,5 +1,6 @@
 import React from "react";
 import MultiProjects from "@components/MultiProjects";
+import dash from "img/dashPage.png";
 
 export default function Dash() {
   return (
@@ -13,7 +14,8 @@ export default function Dash() {
       thirdParagraph={
         "This enhanced interface empowers users with an intuitive experience across platforms, enabling teams to effortlessly schedule tasks, input real-time data, and generate detailed reports. The collaborative journey not only improved Dash's usability but also laid the foundation for a more accessible and inclusive user experience."
       }
-      img={""}
+      img={dash}
+      imgAlt={"Dash"}
       timeline={"1 Month"}
       role={"Visual"}
       role2={"Testing"}
